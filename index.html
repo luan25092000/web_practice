@@ -4,93 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTY TNHH ÁNH TRINH</title>
-    <link rel="stylesheet"type="text/css"href="style.css">
+    <link rel="stylesheet"href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <style>
-    body{
-        height:1500px;
-    }
-    /*Phần main*/
-    .carousel-inner img {
-        width: 100%;
-        height: 100%;
-    }
-    .carousel-caption{
-        text-align:left;
-        padding:0% 10% 10% 0%;
-    }
-    .title{
-        color:grey;
-        font-size:20px;
-        
-    }
-    .title:hover{
-        color:orange;
-        text-decoration:none;
-    }
-    .wrap{
-        padding:50px 0px 50px 0px;
-    }
-    .nameProduct{
-        color:gray;
-        padding:10px 0px 5px 0px;
-    }
-    .price{
-        color:orange;
-    }
-    .row{
-        padding-bottom:50px;
-    }
-    .navbar{
-        padding:25px 20px 25px 80px;
-    }
-    .col-sm-3{
-        position:relative;
-    }
-    .imgMix{
-        position: absolute;
-        opacity: 0;
-        left:15px;
-    }
-    .imgMix:hover{
-        opacity:1;
-        transition:0.6s;
-    }
-    .change{
-        text-align:right;
-    }
-    i{
-        font-size:25px;
-        color:gray;
-    }
-    i:hover{
-        color:white;
-    }
-    .nav-link{
-        color:gray;
-    }
-    .nav-link:hover{
-        color:white;
-    }
-    .endMain{
-        text-align:center;
-        color:gray;
-        border:1px solid gray;
-        border-left:none;
-        border-right:none;
-        margin-bottom:40px;
-        padding:20px 0px 20px 0px;
-    }
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <!--Phần header-->
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light fixed-top"style="background-color:white;">
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top"style="background-color:white;padding:0;">
             <a href="index.html"class="navbar-brand">
                 <img class="float-right"src="image/logo.png"title="logo"alt="lỗi hình ảnh">
             </a>
@@ -211,25 +136,37 @@
                       <img src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-classic-chair-300x372.jpg"/>
                       <img class="imgMix"src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-classic-chair-2-300x372.jpg"/>
                       <div class="nameProduct">Classic Chair</div>
-                      <div>$379.00</div>
+                      <div class="mix">
+                        <div>$379.00</div>
+                        <div><a href="#">Show more</a></div>
+                      </div>
                   </div>
                   <div class="col-sm-3">
                       <img src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-pendant-lamp-300x372.jpg"/>
                       <img class="imgMix"src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-pendant-lamp-2-300x372.jpg"/>
                       <div class="nameProduct">Pendant lamp</div>
-                      <div>$79.00</div>
+                      <div class="mix">
+                        <div>$79.00</div>
+                        <div><a class="txtMix"href="#">Show more</a></div>
+                      </div>
                   </div>
                   <div class="col-sm-3">
                        <img src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-lighthouse-lantern-300x372.jpg"/>
                        <img class="imgMix"src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-lighthouse-lantern-2-300x372.jpg"/>
                        <div class="nameProduct">Lighthouse Lantern</div>
-                       <div>$69.00</div>
+                       <div class="mix">
+                        <div>$69.00</div>
+                        <div><a class="txtMix"href="#">Show more</a></div>
+                      </div>
                   </div>
                   <div class="col-sm-3">
                         <img src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-wall-clock-2-300x372.jpg"/>
                         <img class="imgMix"src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-wall-clock-300x372.jpg"/>
                         <div class="nameProduct">Wall Clock</div>
-                        <div>$79.00</div>
+                        <div class="mix">
+                            <div>$79.00</div>
+                            <div><a class="txtMix"href="#">Show more</a></div>
+                          </div>
                   </div>
               </div>
               <!--dòng sản phầm 2-->
@@ -419,6 +356,102 @@
                           <img class="imgMix"src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-coaster-set-2-300x372.jpg"/>
                           <div class="nameProduct">Coaster Set</div>
                           <div>$19.00</div>
+                    </div>
+                </div>
+                 <!--dòng sản phẩm 9-->
+                 <div class="row">
+                    <div class="col-sm-3">
+                        <img src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-adrian-wash-bag-300x372.jpg"/>
+                        <img class="imgMix"src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-adrian-wash-bag-2-300x372.jpg"/>
+                        <div class="nameProduct">Adrian Wash Bag</div>
+                        <div>$29.00</div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/eco-lotion-300x372.jpg"/>
+                        <img class="imgMix"src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/eco-lotion-2-300x372.jpg"/>
+                        <div class="nameProduct">Eco Body Lotion</div>
+                        <div>$12.00</div>
+                    </div>
+                    <div class="col-sm-3">
+                         <img src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-plaited-basket-300x372.jpg"/>
+                         <img class="imgMix"src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-plaited-basket-2-300x372.jpg"/>
+                         <div class="nameProduct">Plaited Basket</div>
+                         <div>$59.00</div>
+                    </div>
+                    <div class="col-sm-3">
+                          <img src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-textured-notebook-300x372.jpg"/>
+                          <img class="imgMix"src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-textured-notebook-2-220x273.jpg"/>
+                          <div class="nameProduct">Textured Notebook</div>
+                          <div>$79.00</div>
+                    </div>
+                </div>
+                <!--dòng sản phẩm 10-->
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-emil-backpack-300x372.jpg"/>
+                        <img class="imgMix"src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-emil-backpack-2-300x372.jpg"/>
+                        <div class="nameProduct">Emil Backpack</div>
+                        <div>$79.00</div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-solo-headphones-300x372.jpg"/>
+                        <img class="imgMix"src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-solo-headphones-2-300x372.jpg"/>
+                        <div class="nameProduct">Solo Headphones</div>
+                        <div>$190.00</div>
+                    </div>
+                    <div class="col-sm-3">
+                         <img src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-wooden-dispencer-300x372.jpg"/>
+                         <img class="imgMix"src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-wooden-tumbler-300x372.jpg"/>
+                         <div class="nameProduct">Wooden Bathroom Set</div>
+                         <div>$12.00-$29.00</div>
+                    </div>
+                    <div class="col-sm-3">
+                          <img src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-multicolor-hangers-300x372.jpg"/>
+                          <img class="imgMix"src=http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-multicolor-hangers-2-300x372.jpg"/>
+                          <div class="nameProduct">Multicolor Hangers</div>
+                          <div>$12.00</div>
+                    </div>
+                </div>
+                <!--dòng sản phẩm 11-->
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-colourful-coasters-300x372.jpg"/>
+                        <img class="imgMix"src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-colourful-coasters-2-300x372.jpg"/>
+                        <div class="nameProduct">Colourful Coasters</div>
+                        <div>$19.00</div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-gold-pattern-vase-300x372.jpg"/>
+                        <img class="imgMix"src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-gold-motif-vase-300x372.jpg"/>
+                        <div class="nameProduct">Gold Pattern Vase</div>
+                        <div style="color:orange;"><del style="color:black;">$79.00</del>$39.00</div>
+                    </div>
+                    <div class="col-sm-3">
+                         <img src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-embrodiered-slippers-300x372.jpg"/>
+                         <img class="imgMix"src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-embrodiered-slippers-2-300x372.jpg"/>
+                         <div class="nameProduct">Embrodiered Slippers</div>
+                         <div>$179.00</div>
+                    </div>
+                    <div class="col-sm-3">
+                          <img src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-multi-device-bag-300x372.jpg"/>
+                          <img class="imgMix"src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-multi-device-bag-2-300x372.jpg"/>
+                          <div class="nameProduct">Multi Device Bag</div>
+                          <div>$55.00</div>
+                    </div>
+                </div>
+                 <!--dòng sản phẩm 12-->
+                 <div class="row">
+                    <div class="col-sm-3">
+                        <img src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-folder-calendar-300x372.jpg"/>
+                        <img class="imgMix"src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-folder-calendar-2-300x372.jpg"/>
+                        <div class="nameProduct">Folder Calendar</div>
+                        <div>$12.00</div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-wood-tray-300x372.jpg"/>
+                        <img class="imgMix"src="http://savoy.nordicmade.com/wp-content/uploads/2015/08/product-wood-tray-2-300x372.jpg"/>
+                        <div class="nameProduct">Wood Tray</div>
+                        <div>$39.00</div>
                     </div>
                 </div>
                 <div class="endMain">All products loaded</div>
