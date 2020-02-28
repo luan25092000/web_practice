@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTY TNHH ÁNH TRINH</title>
-    <link rel="stylesheet"href="style.css">
+    <link rel="stylesheet"type="text/css"href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -93,21 +93,21 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/slider-pendant-lighting.jpg" alt="Lỗi hình ảnh">
-                <div class="carousel-caption">
+                <div class="carousel-caption"style="padding:0 30% 15% 0;text-align:left;">
                     <h3>Contemporary Pendant<br/> Lighting</h3>
                     <p class="title">Interior</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/slider-wall-clock.jpg" alt="Lỗi hình ảnh">
-                <div class="carousel-caption">
+                <div class="carousel-caption"style="padding:0 30% 15% 0;text-align:left;">
                     <h3 style="color:black;">Minimal Rotating Disc<br/>Wall Clock</h3>
                     <p class="title">Decoration</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/slider-basket.jpg" alt="Lỗi hình ảnh">
-                <div class="carousel-caption">
+                <div class="carousel-caption"style="padding:0 30% 15% 0;text-align:left;">
                     <h3 style="color:black;">Bamboo Zigzag Pattern<br/>Basket</h3>
                     <p class="title">Essentials</p>
                 </div>
@@ -124,46 +124,58 @@
           </div>
           <div class=container-fluid>
               <div class="wrap">
-                <span><a href="#"class="title">All &nbsp;/&nbsp;</a></span>
-                <span><a href="#"class="title">Bags & Backpacks &nbsp;/&nbsp;</a></span>
-                <span><a href="#"class="title">Decoration &nbsp;/&nbsp;</a></span>
-                <span><a href="#"class="title">Essentials &nbsp;/&nbsp;</a></span>
-                <span><a href="#"class="title">Interior</a></span>
+                <span class="title button"data-filter="all">All &nbsp;/&nbsp;</span>
+                <span class="title button"data-filter="bag">Bags & Backpacks &nbsp;/&nbsp;</span>
+                <span class="title button"data-filter="decorate">Decoration &nbsp;/&nbsp;</span>
+                <span class="title button"data-filter="essential">Essentials &nbsp;/&nbsp;</span>
+                <span class="title button"data-filter="interior">Interior</span>
               </div>
               <!--dòng sản phẩm đầu-->
               <div class="row">
-                  <div class="col-sm-3">
+                  <div class="col-sm-3 filter interior">
                       <img src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-classic-chair-300x372.jpg"/>
                       <img class="imgMix"src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-classic-chair-2-300x372.jpg"/>
-                      <div class="nameProduct">Classic Chair</div>
-                      <div class="mix">
+                      <div class="mix-1">
+                        <div class="nameProduct">Classic Chair</div>
+                        <div class="symbolHearth"><i class="fas fa-heart symbolHeart--child"></i></div>
+                      </div>
+                      <div class="mix-2">
                         <div>$379.00</div>
-                        <div><a href="#">Show more</a></div>
+                        <div><a class="txtMix active-showmore"href="#">Show more</a></div>
                       </div>
                   </div>
-                  <div class="col-sm-3">
+                  <div class="col-sm-3 filter interior">
                       <img src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-pendant-lamp-300x372.jpg"/>
                       <img class="imgMix"src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-pendant-lamp-2-300x372.jpg"/>
-                      <div class="nameProduct">Pendant lamp</div>
-                      <div class="mix">
+                      <div class="mix-1">
+                        <div class="nameProduct">Pendant lamp</div>
+                        <div class="symbolHearth"><i class="fas fa-heart symbolHeart--child"></i></div>
+                      </div>
+                      <div class="mix-2">
                         <div>$79.00</div>
-                        <div><a class="txtMix"href="#">Show more</a></div>
+                        <div><a class="txtMix active-showmore"href="#">Show more</a></div>
                       </div>
                   </div>
-                  <div class="col-sm-3">
+                  <div class="col-sm-3 filter decorate">
                        <img src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-lighthouse-lantern-300x372.jpg"/>
                        <img class="imgMix"src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-lighthouse-lantern-2-300x372.jpg"/>
-                       <div class="nameProduct">Lighthouse Lantern</div>
-                       <div class="mix">
+                       <div class="mix-1">
+                         <div class="nameProduct">Lighthouse Lantern</div>
+                         <div class="symbolHearth"><i class="fas fa-heart symbolHeart--child"></i></div>
+                       </div>
+                       <div class="mix-2">
                         <div>$69.00</div>
                         <div><a class="txtMix"href="#">Show more</a></div>
                       </div>
                   </div>
-                  <div class="col-sm-3">
+                  <div class="col-sm-3 filter decorate">
                         <img src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-wall-clock-2-300x372.jpg"/>
                         <img class="imgMix"src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-wall-clock-300x372.jpg"/>
-                        <div class="nameProduct">Wall Clock</div>
-                        <div class="mix">
+                        <div class="mix-1">
+                            <div class="nameProduct">Wall Clock</div>
+                            <div class="symbolHearth"><i class="fas fa-heart symbolHeart--child"></i></div>
+                        </div>
+                        <div class="mix-2">
                             <div>$79.00</div>
                             <div><a class="txtMix"href="#">Show more</a></div>
                           </div>
@@ -171,29 +183,53 @@
               </div>
               <!--dòng sản phầm 2-->
               <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 filter bag">
                         <img src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-hans-backpack-300x372.jpg"/>
                         <img class="imgMix"src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-hans-backpack-2-300x372.jpg"/>
-                        <div class="nameProduct">Hans Backpack</div>
-                        <div>$79.00</div>
+                        <div class="mix-1">
+                            <div class="nameProduct">Hans Backpack</div>
+                            <div class="symbolHearth"><i class="fas fa-heart symbolHeart--child"></i></div>
+                        </div>
+                        <div class="mix-2">
+                            <div>$79.00</div>
+                            <div><a class="txtMix"href="#">Show more</a></div>
+                          </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 filter essential">
                         <img src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-specs-sunglasses-300x372.jpg"/>
                         <img class="imgMix"src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-specs-sunglasses-2-300x372.jpg"/>
-                        <div class="nameProduct">Specs Sunglasses</div>
-                        <div>$109.00</div>
+                        <div class="mix-1">
+                            <div class="nameProduct">Specs Sunglasses</div>
+                            <div class="symbolHearth"><i class="fas fa-heart symbolHeart--child"></i></div>
+                        </div>
+                        <div class="mix-2">
+                            <div>$109.00</div>
+                            <div><a class="txtMix"href="#">Show more</a></div>
+                          </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 filter essential">
                         <img src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-press-coffee-maker-300x372.jpg"/>
                         <img class="imgMix"src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-press-coffee-maker-2-300x372.jpg"/>
-                        <div class="nameProduct">Press Coffee Maker</div>
-                        <div>$39.00</div>
+                        <div class="mix-1">
+                            <div class="nameProduct">Press Coffee Maker</div>
+                            <div class="symbolHearth"><i class="fas fa-heart symbolHeart--child"></i></div>
+                        </div>
+                        <div class="mix-2">
+                            <div>$39.00</div>
+                            <div><a class="txtMix"href="#">Show more</a></div>
+                          </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 filter decorate">
                         <img src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-door-bumper-300x372.jpg"/>
                         <img class="imgMix"src="http://savoy.webstack.netdna-cdn.com/wp-content/uploads/2015/08/product-door-stop-300x372.jpg"/>
-                        <div class="nameProduct">Door Bumper</div>
-                        <div>$29.00</div>
+                        <div class="mix-1">
+                            <div class="nameProduct">Door Bumper</div>
+                            <div class="symbolHearth"><i class="fas fa-heart symbolHeart--child"></i></div>
+                        </div>
+                        <div class="mix-2">
+                            <div>$29.00</div>
+                            <div><a class="txtMix"href="#">Show more</a></div>
+                          </div>
                     </div>
               </div>
               <!--dòng sản phẩm 3-->
@@ -492,5 +528,26 @@
             </ul>
         </nav>
     </footer>
+    <!--Hiệu ứng-->
+    <script>
+        $(document).ready(function(){
+            $('.col-sm-3').hover(function(){
+                $(this).find('.txtMix').addClass('active-showmore');
+            },function(){
+                $(this).find('.txtMix').removeClass('active-showmore');
+            });
+            /*gallery filter animation*/
+            $(".button").click(function(){
+                var value=$(this).attr("data-filter");
+                if(value=="all"){
+                    $(".filter").show(1000);
+                }
+                else{
+                    $(".filter").not("."+value).hide(1000);
+                    $(".filter").filter("."+value).show(1000);
+                }
+            });
+        });
+    </script>
 </body>
 </html>

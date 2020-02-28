@@ -4,12 +4,13 @@
     height: 100%;
 }
 .title{
-    color:grey;
+    color:rgb(182, 179, 179);
     font-size:20px;
 }
 .title:hover{
     color:orange;
     text-decoration:none;
+    cursor:pointer;
 }
 .wrap{
     padding:50px 0px 50px 0px;
@@ -39,25 +40,29 @@
 .imgMix:hover{
     opacity:1;
     transition:0.6s;
+    cursor:pointer;
 }
 /*Trộn chữ*/
-.mix{
+.mix-2{
     position:relative;
 }
 .txtMix{
     position: absolute;
     top:0;
-    width:100px;
+    width:80px;
     height:30px;
-    border:1px solid gray;;
+    border:1px solid grey;;
     border-top:none;
     border-right:none;
     border-left:none;
-    text-align:center;
     background-color:white;
     color:black;
+    transform: translateX(-2000%);
+}
+.active-showmore{
     animation-name: go-to-right;
-    animation-duration:1s;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
 }
 .txtMix:hover{
     color:orange;
@@ -70,6 +75,23 @@
     to{
         transform: translateX(0%);
     }
+}
+/*symbol*/
+.mix-1{
+    position: relative;
+}
+.symbolHearth{
+    position:absolute;
+    top:7px;
+    left:90%;
+}
+.symbolHeart--child{
+    font-size:15px;
+    color:gray;
+}
+.symbolHeart--child:hover{
+    color:palevioletred;
+    cursor:pointer;
 }
 .endMain{
     text-align:center;
@@ -87,6 +109,7 @@ i{
 }
 i:hover{
     color:white;
+    cursor:pointer;
 }
 .nav-link{
     color:gray;
