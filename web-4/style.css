@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+.container{
+    width:100%;
+}
+.menu{
+    width:100%;
+    display:flex;
+    align-items:center;
+    list-style-type: none;
+    background-color:#0299F4;
+    padding:0.6rem;
+}
+.item{
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+    margin-left:1rem;
+}
+.container-child{
+    width:100%;
+    display:flex;
+}
+/*Thanh bên trái*/
+.container-left-child{
+    width:25%;
+}
+/*Thanh bên trái bên trên*/
+.container-left-child-1{
+    width:85%;
+    margin-left:0.3rem;
+}
+.title-1{
+    width:100%;
+    background-color:#BEE0FF;
+    color:#165E9B;
+    display: flex;
+    align-items: center;
+    border-radius: 0.3rem 0.3rem 0 0;
+    padding:0.3rem 0 0.3rem 0;
+    font-weight:bold;
+    font-size:1.2rem;
+}
+.title-image{
+    margin-right:0.2rem;
+}
+.list-1{
+    padding-left:0.5rem;
+    border:3px solid #F2F2F2;
+    border-top:none;
+    list-style-type:none;
+    padding-bottom:1rem;
+    padding-top:1rem;
+}
+.list-item,.first-item{
+    width:95%;
+    margin-top:1rem;
+    border:2px solid #F2F2F2;
+    padding:0.5rem 0;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+.list-item-child{
+    color:#60B6F6;
+    text-decoration: none;
+    font-weight:bold;
+}
+/*Thanh bên trái bên dưới*/
+.container-left-child-2{
+    width:85%;
+    margin:1rem 0 1rem 0.3rem;
+}
+.title-2{
+    width:100%;
+    background-color:#BEE0FF;
+    color:#165E9B;
+    display: flex;
+    align-items: center;
+    border-radius: 0.3rem 0.3rem 0 0;
+    padding:0.3rem 0 0.3rem 0;
+    font-weight:bold;
+    font-size:1.2rem;
+}
+.support{
+    margin:0 auto;
+}
+.list-2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border:3px solid #F2F2F2;
+    border-top:none;
+}
+/*Thanh bên phải*/
+.container-right-child{
+    width:75%;
+    border:3px solid #F2F2F2;
+    padding:1rem 0 0 2.2rem;
+    margin:0 1rem 10rem 0;
+    border-top:none;
+}
+/*Thanh bên phải bên trên*/
+.container-right-child-1,.container-right-child-2{
+    width:96%;
+}
+.container-right-child-2{
+    margin-top:1rem;
+}
+.block-1{
+    text-align: justify;
+    display:flex;
+    border:3px solid #F2F2F2;
+    border-top:none;
+}
+.text{
+    margin-left:1rem;
+}
+.block-2{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border:3px solid #F2F2F2;
+    padding:1rem 0;
+    border-top:none;
+}
+.block-child{
+    width:23%;
+    border:1px solid rgb(221, 219, 219);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price{
+    color: #A9322A;
+    font-weight:bold;
+}
